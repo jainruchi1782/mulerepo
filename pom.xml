@@ -28,7 +28,23 @@
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
+				<extensions>true</extensions>                
+				<configuration>
+                    <armDeployment>
+                        <applicationName>continuousintegration</applicationName>
+                        <muleVersion>4.2.2</muleVersion>
+                        <uri>https://anypoint.mulesoft.com</uri>
+                        <target>AWS-MuleNode14.2.2-Dev</target>
+                        <targetType>server</targetType>
+                        <username>jabbarshariff_se2</username>
+                        <password>Jan#2007</password>
+                        <environment>Development</environment>
+                        <properties>
+                            <mule_env>dev</mule_env>
+                        </properties>
+                    </armDeployment>
+                </configuration>
+            
 			</plugin>
 		</plugins>
 	</build>
